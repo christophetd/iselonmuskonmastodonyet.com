@@ -5,39 +5,112 @@
 	<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
 	<meta name=viewport content="width=device-width, initial-scale=1">
 	<title>Is Elon Musk on Mastodon Yet?</title>
-	<style type="text/css" media="screen"><!--
-    * { box-sizing: border-box; }
-    body {margin: 0; padding: 0; font-family: Verdana,Geneva,sans-serif;}
-    .big { font-size: 36pt; }
-      #outer { position: absolute; display: table; width: 100%; height: 99%; margin: 0 auto; }
-      #upper { display: table-row; width: 100%; height: 85%; }
-      #lower { display: table-row; width: 100%; height: 15%; max-height: 90px; }
-      #content { position: relative; display: table-cell; vertical-align: middle; text-align: center; }
-      #footer { position: relative; display: table-cell; vertical-align: bottom; text-align: center; }
-    </style>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DE00KHTV9X"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+	<style type="text/css" media="screen">
+		* {
+			box-sizing: border-box;
+		}
 
-      gtag('config', 'G-DE00KHTV9X');
-    </script>
-  </head>
-  
-  <body bgcolor="#ffffff">
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Verdana, Geneva, sans-serif;
+		}
+
+		.big {
+			font-size: 36pt;
+		}
+
+		.medium {
+			font-size: 18pt;
+			color: #071e26;
+		}
+
+
+		.small {
+			font-size: 12pt;
+			color: #071e26;
+			font-family: 'Courier New', Courier, monospace;
+		}
+
+		#outer {
+			position: absolute;
+			display: table;
+			width: 100%;
+			height: 75%;
+		}
+
+		#upper {
+			display: table-row;
+			width: 100%;
+			height: 75%;
+		}
+
+		#lower {
+			display: table-row;
+			width: 100%;
+			height: 25%;
+			/*max-height: 200px;*/
+		}
+
+		.content {
+			position: relative;
+			display: table-cell;
+			vertical-align: middle;
+			text-align: center;
+		}
+
+		</style>
+	<script src="https://raw.githubusercontent.com/Aly-ve/Mastodon-share-button/6b3f44434075391c8ccf0d65ba84be8f94616730/dist/mastodon.js"></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-DE00KHTV9X"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-DE00KHTV9X');
+	</script>
+</head>
+
+<body bgcolor="#ffffff">
 	<div id="outer">
 		<div id="upper">
-			<div id="content">
+			<div class="content">
 				<span class="big">No. Elon Musk is not on Mastodon (yet).</span>
-			</div>		
+			</div>
 		</div>
 		<div id="lower">
+			<div class="content medium">
+				<p>
+						But there's lots of awesome people there.<br/>
+						<span class="small">
+							| <a href="https://instances.social/list#lang=&allowed=&prohibited=&min-users=&max-users=">find your instance<a>
+							| <a href="https://github.com/joyeusenoelle/GuideToMastodon">get started</a>
+							| <a href="https://help.twitter.com/en/managing-your-account/how-to-download-your-twitter-archive">download your twitter data</a> |
+							<br />
+							| <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fiselonmuskonmastodonyet.com&text=%40elonmusk%20Why%20are%20you%20not%20on%20Mastodon%20yet%3F">tweet this @elonsmusk</a>
+							| <a href="https://www.patreon.com/mastodon">donate</a>
+							| <a id="complain" href="#">complain about this website</a>
+							|
+					</span>
+				</p>
+			</div>
 			<div id="footer">
 			</div>
 		</div>
 	</div>
-	</body>
-  
+	<script>
+		var audio = new Audio('rickroll.mp3');
+		function rickroll() {
+			if (audio.paused) {
+				audio.play();
+			}
+			else {
+				audio.pause()
+				audio.currentTime = 0;
+			}
+		}
+		document.getElementById('complain').addEventListener('click', rickroll)
+	</script>
+</body>
+
 </html>
